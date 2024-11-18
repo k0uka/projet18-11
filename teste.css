@@ -1,0 +1,6 @@
+*{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espace entre les cartes */
+    justify-content: space-between; /* Ajuste l'espacement */
+}
