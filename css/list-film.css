@@ -1,3 +1,12 @@
+
+img.card-img-top {
+    height: 20rem;
+}
+
+.card:hover{
+    background-color: gray;
+    color: white;
+}
 .movie-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
