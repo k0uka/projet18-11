@@ -1,6 +1,11 @@
 *{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Espace entre les cartes */
-    justify-content: space-between; /* Ajuste l'espacement */
+
+}
+.card-img-overlay{
+    height: 5px;
+}
+.card-img{
+    height: 10%;
 }
