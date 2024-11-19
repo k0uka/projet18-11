@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mentions légales du site" />
+    <title>Mentions Légales</title>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Mentions Légales</h1>
+        <nav>
+          <a href="/" class="text-gray-300 hover:text-white">Accueil</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-4">
+      <section>
+        <h2 class="text-xl font-semibold mb-4">Informations Légales</h2>
+        <p class="mb-2">
+          Conformément à l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour
+          la confiance dans l'économie numérique, nous vous informons des
+          éléments suivants :
+        </p>
+        <ul class="list-disc pl-6 space-y-2">
+          <li><strong>Propriétaire du site :</strong> Back to Pixel</li>
+          <li>
+            <strong>Adresse :</strong> 123 Rue de l'Imaginaire, 75000 Rouen
+          </li>
+          <li><strong>Téléphone :</strong> +33 1 23 45 67 89</li>
+          <li><strong>Email :</strong> contact@Cineflix.fr</li>
+        </ul>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold mb-4">Hébergeur</h2>
+        <p>
+          Le site est hébergé par GitHub Pages. Pour toute question concernant
+          l’hébergement, vous pouvez contacter :
+        </p>
+        <p class="mt-2">
+          <strong>GitHub Inc.</strong><br />
+          Adresse : 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA<br />
+          Téléphone : +1 415-448-6673<br />
+        </p>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-xl font-semibold mb-4">Propriété Intellectuelle</h2>
+        <p>
+          Tous les éléments graphiques, textes, logos et images présents sur ce
+          site sont protégés par le droit d'auteur et le Code de la propriété
+          intellectuelle. Toute reproduction ou utilisation sans autorisation
+          préalable est interdite.
+        </p>
+      </section>
+
+      <section x-data="{ open: false }" class="mt-8">
+        <h2 class="text-xl font-semibold mb-4">Responsabilité</h2>
+        <p>
+          Le propriétaire du site décline toute responsabilité en cas d'erreur
+          ou d'omission dans les informations diffusées sur le site. Cependant,
+          vous pouvez nous signaler tout problème via le bouton ci-dessous :
+        </p>
+        <button
+          @click="open = !open"
+          class="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none"
+        >
+          Contacter l'administrateur
+        </button>
+        <div x-show="open" class="mt-4 p-4 border rounded-lg bg-blue-50">
+          <p>Email : admin@Cineflix.fr</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+      <div class="container mx-auto text-center">
+        © 2024 Back to Pixel - Tous droits réservés
+      </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+*{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-img-overlay{
+    height: 5px;
+    background-color: aquamarine;
+}
+.card-img{
+    height: 10%;
+}
+.card border-4{
+    background-color: blue;
+}
