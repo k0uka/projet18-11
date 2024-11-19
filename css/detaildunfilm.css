@@ -5,5 +5,13 @@ body{
 
 div p {
     font-size: larger;
-    padd
 }
+
+img {
+width: 800px;
+}
+
+.imagep {
+    margin-top: 10px;
+}
+
