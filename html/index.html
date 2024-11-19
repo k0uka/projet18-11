@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CinéFlix - Là où chaque film trouve sa place</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://csshake.surge.sh/csshake.min.css"
+    />
+
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&family=Questrial&family=Roboto+Slab:wght@100..900&family=Shrikhand&family=Teko:wght@300..700&display=swap");
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 py-3"
+      >
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold">CinéFlix</a>
+
+        <!-- Menu desktop -->
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="index.html" class="hover:text-blue-400">Accueil</a></li>
+          <li><a href="film.html" class="hover:text-blue-400">Films</a></li>
+          <li><a href="Genre.html" class="hover:text-blue-400">Genre</a></li>
+          <li>
+            <a href="Nouveautés.html" class="hover:text-blue-400">Nouveautés</a>
+          </li>
+        </ul>
+
+        <!-- Bouton mobile -->
+        <button
+          class="md:hidden focus:outline-none"
+          onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu mobile -->
+      <ul
+        id="mobile-menu"
+        class="md:hidden hidden flex flex-col bg-gray-800 text-white"
+      >
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 border-b border-gray-700 hover:bg-gray-700"
+            >Accueil</a
+          >
+        </li>
+        <li>
+          <a
+            href="#services"
+            class="block px-4 py-2 border-b border-gray-700 hover:bg-gray-700"
+            >Films</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="block px-4 py-2 border-b border-gray-700 hover:bg-gray-700"
+            >Genre</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="Nouveautés"
+            class="block px-4 py-2 border-b border-gray-700 hover:bg-gray-700"
+            >Nouveautés</a
+          >
+        </li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <h2 class="animate__animated animate__jello">Films Tendances</h2>
+    <div data-aos="fade-up" class="your-slider">
+      <div>
+        <img src="images/titanic.jpg" alt="Film 1" />
+        <a href=""
+          ><button class="btn btn-secondary btn-hover">
+            en savoir plus
+          </button></a
+        >
+      </div>
+      <div>
+        <img src="images/terrifier.png" alt="Film 2" /><a href=""
+          ><button class="btn btn-secondary btn-hover">
+            en savoir plus
+          </button></a
+        >
+      </div>
+      <div>
+        <img src="images/badboys.jpg" alt="Film 3" /><a href=""
+          ><button class="btn btn-secondary btn-hover">
+            en savoir plus
+          </button></a
+        >
+      </div>
+      <div>
+        <img src="images/barbie.jpg" alt="Film 4" /><a href=""
+          ><button class="btn btn-secondary btn-hover">
+            en savoir plus
+          </button></a
+        >
+      </div>
+      <div>
+        <img src="images/etoile.png" alt="Film 5" /><a href=""
+          ><button class="btn btn-secondary btn-hover">
+            en savoir plus
+          </button></a
+        >
+      </div>
+      <div>
+        <img src="images/intouchable.png" alt="Film 6" /><a href=""
+          ><button class="btn btn-secondary btn-hover">
+            en savoir plus
+          </button></a
+        >
+      </div>
+      <div>
+        <img src="images/lalaland.png" alt="Film 7" />
+        <a href=""
+          ><button class="btn btn-secondary btn-hover">
+            en savoir plus
+          </button></a
+        >
+      </div>
+    </div>
+    <div id="top">
+      <h2 class="animate__animated animate__jello">Les Nouveautés</h2>
+      <div class="container">
+        <div class="row">
+          <div data-aos="fade-up" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/badboys.jpg" alt="" />
+                <a href=""
+                  ><button class="btn btn-secondary btn-hover">
+                    en savoir plus
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/etoile.png" alt="" />
+                <a href=""
+                  ><button class="btn btn-secondary btn-hover">
+                    en savoir plus
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/lalaland.png" alt="" />
+                <a href=""
+                  ><button class="btn btn-secondary btn-hover">
+                    en savoir plus
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/titanic.jpg" alt="" />
+                <a href=""
+                  ><button class="btn btn-secondary btn-hover">
+                    en savoir plus
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div data-aos="fade-up" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/venom.png" alt="" />
+                <a href=""
+                  ><button class="btn btn-secondary btn-hover">
+                    en savoir plus
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/compte.png" alt="" />
+                <a href=""
+                  ><button class="btn btn-secondary btn-hover">
+                    en savoir plus
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/fight.jpg" alt="" />
+                <a href=""
+                  ><button class="btn btn-secondary btn-hover">
+                    en savoir plus
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card">
+              <div class="card-body">
+                <img src="images/Gladiator-2-Paramount-pictures.jpg" alt="" />
+                <a href=""
+                  ><button class="btn btn-secondary btn-hover">
+                    en savoir plus
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col sm:flex-row justify-between items-center">
+          <!-- Logo ou Texte -->
+          <div class="text-center sm:text-left mb-4 sm:mb-0">
+            <p class="text-lg font-semibold">Cinéflix</p>
+            <p class="text-sm">© 2024 Cinéflix - Tous droits réservés</p>
+          </div>
+
+          <!-- Liens -->
+          <div class="flex flex-wrap justify-center sm:justify-end space-x-4">
+            <a href="index.html" class="hover:text-blue-400">Accueil</a>
+            <a href="gilm.html" class="hover:text-blue-400">Films</a>
+            <a href="nouveautes.html" class="hover:text-blue-400">Nouveautés</a>
+            <a href="mention.html" class="hover:text-blue-400"
+              >Mentions Légales</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <style>
+      .slick-slide {
+        margin: 0 15px;
+      }
+      .slick-center .slick-slide {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $(".your-slider").slick({
+          centerMode: true,
+          slidesToShow: 4,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          arrows: false,
+          focusOnSelect: true,
+          responsive: [
+            {
+              breakpoint: 768, // Moins de 768px, 1 slide
+              settings: {
+                slidesToShow: 1,
+                centerMode: true,
+              },
+            },
+            {
+              breakpoint: 480, // Moins de 480px, 1 slide
+              settings: {
+                slidesToShow: 1,
+                centerMode: true,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        AOS.init();
+      });
+    </script>
+  </body>
+</html>
