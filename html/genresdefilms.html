@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genres de Films</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="genresdefilms.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genres de Films</title>
+    <!-- Liens CSS -->
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/genresdefilms.css">
+</head>
+<body>
   <!-- nav -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
+    <div class="container-fluid" class="animate__fadeInDown">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,20 +44,22 @@
   <!-------------------------Grilles des genres----------------------->
   <div class="d-flex justify-content-center align-items-center" style="height: 130vh;">
     <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" style="height: 130vh;">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4" style="height: 130vh;">
         <!-- Card 1 -->
-        <div class="col">
-          <div class="card border-4" style="background-color: #000000; color: #FFFFFF">
+        <div class="col" data-aos="fade-up">
+          <a href="http://127.0.0.1:5500/html/list-film.html" class="text-decoration-none" class="card-link" target="_blank">
+          <div class="card border-4" style="background-color: #1f2937; color: #FFFFFF">
             <img src="/img/genrefilms/horreur.png" class="card-img-top rounded-0" style="height: 70%; object-fit: cover;" alt="Films d'horreur">
             <div class="card-body">
               <h5 class="card-title">Horreur</h5>
               <p class="card-text">Chaque ombre cache un cauchemar.</p>
             </div>
           </div>
+        </a>
         </div>
         <!-- Card 2 -->
-        <div class="col">
-          <div class="card border-4" style="background-color: #000000; color: #FFFFFF">
+        <div class="col" data-aos="fade-up" data-aos-delay="100">
+          <div class="card border-4" style="background-color: #1f2937; color: #FFFFFF">
             <img src="/img/genrefilms/comédie.png" class="card-img-top" style="height: 70%; object-fit: cover;" alt="Films de comédie">
             <div class="card-body">
               <h5 class="card-title">Comédie</h5>
@@ -61,8 +68,8 @@
           </div>
         </div>
         <!-- Card 3 -->
-        <div class="col">
-          <div class="card border-4" style="background-color: #000000; color: #FFFFFF">
+        <div class="col" data-aos="fade-up" data-aos-delay="200">
+          <div class="card border-4" style="background-color: #1f2937; color: #FFFFFF">
             <img src="/img/genrefilms/romance.png" class="card-img-top" style="height: 70%; object-fit: cover;" alt="Films de romance">
             <div class="card-body">
               <h5 class="card-title">Romance</h5>
@@ -71,8 +78,8 @@
           </div>
         </div>
         <!-- Card 4 -->
-        <div class="col">
-          <div class="card border-4" style="background-color: #000000; color: #FFFFFF">
+        <div class="col" data-aos="fade-up" data-aos-delay="300">
+          <div class="card border-4" style="background-color: #1f2937; color: #FFFFFF">
             <img src="/img/genrefilms/action.png" class="card-img-top" style="height: 70%; object-fit: cover;" alt="Films d'action">
             <div class="card-body">
               <h5 class="card-title">Action</h5>
@@ -81,8 +88,8 @@
           </div>
         </div>
         <!-- Card 5 -->
-        <div class="col">
-          <div class="card border-4" style="background-color: #000000; color: #FFFFFF">
+        <div class="col" data-aos="fade-up" data-aos-delay="400">
+          <div class="card border-4" style="background-color: #1f2937; color: #FFFFFF">
             <img src="/img/genrefilms/drame.png" class="card-img-top" style="height: 70%; object-fit: cover;" alt="Films de drame">
             <div class="card-body">
               <h5 class="card-title">Drame</h5>
@@ -91,8 +98,8 @@
           </div>
         </div>
         <!-- Card 6 -->
-        <div class="col">
-          <div class="card border-4" style="background-color: #000000; color: #FFFFFF">
+        <div class="col" data-aos="fade-up" data-aos-delay="500">
+          <div class="card border-4" style="background-color: #1f2937; color: #FFFFFF">
             <img src="/img/genrefilms/fantasy.png" class="card-img-top" style="height: 70%; object-fit: cover;" alt="Films de fantasy">
             <div class="card-body">
               <h5 class="card-title">Fantasy</h5>
@@ -101,8 +108,8 @@
           </div>
         </div>
         <!-- Card 7 -->
-        <div class="col">
-          <div class="card border-4" style="background-color: #000000; color: #FFFFFF">
+        <div class="col" data-aos="fade-up" data-aos-delay="600">
+          <div class="card border-4" style="background-color: #1f2937; color: #FFFFFF">
             <img src="/img/genrefilms/thriller.png" class="card-img-top" style="height: 70%; object-fit: cover;" alt="Films de thriller">
             <div class="card-body">
               <h5 class="card-title">Thriller</h5>
@@ -111,8 +118,8 @@
           </div>
         </div>
         <!-- Card 8 -->
-        <div class="col">
-          <div class="card border-4" style="background-color: #000000; color: #FFFFFF">
+        <div class="col" data-aos="fade-up" data-aos-delay="700">
+          <div class="card border-4" style="background-color: #1f2937; color: #FFFFFF">
             <img src="/img/genrefilms/adventure.png" class="card-img-top" style="height: 70%; object-fit: cover;" alt="Films de fantasy">
             <div class="card-body">
               <h5 class="card-title">Adventure</h5>
@@ -131,5 +138,13 @@
 
   <!--- Attention ne pas toucher --->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 500, // Durée de l'animation
+    easing: "ease-in-out", // Effet d'accélération
+    once: true // L'animation se joue une seule fois
+  });
+</script>
 </body>
 </html>
