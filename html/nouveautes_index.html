@@ -9,7 +9,7 @@
       content="Bienvenue dans Cinéflix, un lieu cinématographique rassemblant tout les films les plus populaires et récents de tout les temps."
     />
     <!--fichier nouveautés css-->
-    <link href="nouveautés_style.css" rel="stylesheet" />
+    <link href="nouveautes_style.css" rel="stylesheet" />
     <!--Librairie AOS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Début librairie Bootstrap-->
@@ -20,11 +20,101 @@
       crossorigin="anonymous"
     />
     <!--Fin librairie bootstrap-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://csshake.surge.sh/csshake.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Cinéflix</title>
   </head>
 
   <!--Debut films récents-->
   <body>
+    <!--Début Menu-->
+    <nav class="bg-gray-800 text-white">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 py-3"
+      >
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold">CinéFlix</a>
+
+        <!-- Menu desktop -->
+        <ul class="hidden md:flex space-x-6">
+          <li><a href="index.html" class="hover:text-blue-400">Accueil</a></li>
+          <li><a href="film.html" class="hover:text-blue-400">Films</a></li>
+          <li><a href="Genre.html" class="hover:text-blue-400">Genre</a></li>
+          <li>
+            <a href="Nouveautés.html" class="hover:text-blue-400">Nouveautés</a>
+          </li>
+        </ul>
+
+        <!-- Bouton mobile -->
+        <button
+          class="md:hidden focus:outline-none"
+          onclick="document.getElementById('mobile-menu').classList.toggle('hidden')"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu mobile -->
+      <ul
+        id="mobile-menu"
+        class="md:hidden hidden flex flex-col bg-gray-800 text-white"
+      >
+        <li>
+          <a
+            href="#"
+            class="block px-4 py-2 border-b border-gray-700 hover:bg-gray-700"
+            >Accueil</a
+          >
+        </li>
+        <li>
+          <a
+            href="#services"
+            class="block px-4 py-2 border-b border-gray-700 hover:bg-gray-700"
+            >Films</a
+          >
+        </li>
+        <li>
+          <a
+            href="#contact"
+            class="block px-4 py-2 border-b border-gray-700 hover:bg-gray-700"
+            >Genre</a
+          >
+        </li>
+
+        <li>
+          <a
+            href="Nouveautés"
+            class="block px-4 py-2 border-b border-gray-700 hover:bg-gray-700"
+            >Nouveautés</a
+          >
+        </li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <!--Fin Menu-->
+
     <div class="arrière_plan">
       <h2 class="films_recents" style="margin-top: 2rem; margin-bottom: 2rem">
         Nos films les plus récents
@@ -54,6 +144,9 @@
                   vie.
                 </p>
                 <a href="#" class="btn btn-primary">En savoir plus...</a>
+                <p class="card-text" style="color: white">
+                  Date de sortie: 9 octobre 2024
+                </p>
               </div>
             </div>
             <!--Fin carte film 1-->
@@ -75,12 +168,15 @@
                 <h5 class="card-title" style="color: white">Le Larbin</h5>
                 <p class="genre" style="color: white">Comédie</p>
                 <p class="card-text" style="color: white">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Grigori, fils d'oligarque pourri gâté, passe sa vie dans les
+                  boîtes de nuit.
                 </p>
                 <a href="detaildunfilmquatre.html" class="btn btn-primary"
                   >En savoir plus...</a
                 >
+                <p class="card-text" style="color: white">
+                  Date de sortie: 17 Juillet 2017
+                </p>
               </div>
             </div>
           </div>
