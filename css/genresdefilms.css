@@ -1,5 +1,18 @@
 a {
-    display: block;
+    text-decoration: none !important;
+}
+
+/* Les images occupent l'espace sans ajouter de marges invisibles */
+a img {
+    display: block; /* Supprime les espaces blancs résiduels autour de l'image */
     margin: 0;
     padding: 0;
+    width: 100%; /* S'assure que l'image s'adapte à son conteneur */
+    height: auto; /* Conserve les proportions de l'image */
+}
+
+/* Supprimer les espaces entre les cartes dans la grille */
+.card {
+    margin: 0; /* Pas de marges inutiles */
+    padding: 0; /* Pas de padding inutile */
 }
