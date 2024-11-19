@@ -1,0 +1,23 @@
+* {
+  text-align: center;
+  color: rgb(9, 113, 137);
+}
+h1,
+h2,
+h3 {
+  font-size: 3em !important;
+}
+body {
+  background-color: black !important;
+}
+footer {
+  margin-top: 5em;
+}
+.col-lg-3 {
+  margin-top: 1em;
+}
+nav {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+}
