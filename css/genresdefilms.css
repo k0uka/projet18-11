@@ -1,18 +1,26 @@
 a {
     text-decoration: none !important;
 }
-
-/* Les images occupent l'espace sans ajouter de marges invisibles */
-a img {
-    display: block; /* Supprime les espaces blancs résiduels autour de l'image */
-    margin: 0;
-    padding: 0;
-    width: 100%; /* S'assure que l'image s'adapte à son conteneur */
-    height: auto; /* Conserve les proportions de l'image */
-}
-
-/* Supprimer les espaces entre les cartes dans la grille */
 .card {
-    margin: 0; /* Pas de marges inutiles */
-    padding: 0; /* Pas de padding inutile */
+    max-width: 900px;
+    margin: auto;
+}
+.card img {
+    height: 270px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 10px;
+}
+.card-title {
+    font-size: 1rem;
+}
+.card-text {
+    font-size: 0.85rem;
+}
+.row-cols-1 .col, 
+.row-cols-sm-2 .col, 
+.row-cols-md-2 .col, 
+.row-cols-lg-4 .col {
+    padding: 5px;
 }
