@@ -10,7 +10,7 @@ a {
     object-fit: cover;
 }
 .card-body {
-    padding: 10px;
+    padding: 30px;
 }
 .card-title {
     font-size: 1rem;
@@ -23,4 +23,8 @@ a {
 .row-cols-md-2 .col, 
 .row-cols-lg-4 .col {
     padding: 5px;
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
 }
